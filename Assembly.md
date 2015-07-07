@@ -16,3 +16,6 @@ Starting with a HackRF One in its case:
     * Slide the tool along the gap while pushing it into the gap, perpendicular to the case.
     * At some point, the tool will slide in a bit further. Run the tool along the gap to separate the internal locking tabs between the two case pieces.
 
+Here's a video of how it's done (links to YouTube):
+
+[![On YouTube: How to Open a HackRF One Case](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/hackrf_one_decase_youtube.jpg)](https://youtu.be/zuXJtpTSEJM "How to Open a HackRF One Case")
