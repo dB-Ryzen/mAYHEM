@@ -1,5 +1,12 @@
 The PortaPack has its own firmware, which needs to be flashed into the HackRF One SPI flash.
 
+## Tools
+
+You will need a few tools installed on your computer before you begin.
+
+* [dfu-util](http://dfu-util.sourceforge.net) - Use the 0.7 release. Newer releases remove the necessary "-s" option.
+* [hackrf](https://github.com/mossmann/hackrf) - All you need is the host tools, specifically, hackrf_spiflash.
+
 ## Getting the Firmware
 
 You may download a [pre-built firmware package](http://www.sharebrained.com/downloads/portapack/firmware/portapack-firmware-20150708.zip), or [build your own firmware](Building-Firmware).
