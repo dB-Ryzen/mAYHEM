@@ -1,6 +1,6 @@
-# Overview
+## Overview
 
-The PortaPack H1 must be attached to a HackRF One.
+The PortaPack H1 must be attached to a HackRF One. Here are the steps:
 
 ## Extract the HackRF One Circuit Board
 
@@ -22,9 +22,15 @@ Here's a video of how it's done (links to YouTube):
 
 ## Attach PortaPack H1 to HackRF One
 
+The PortaPack H1 and HackRF One attach via three headers. The HackRF One has three black female header sockets. The PortaPack H1 has three black and silver male header pin arrays.
+
+* Remove the placement caps (little black caps) from the three headers on the PortaPack.
+* Line up the PortaPack header pin arrays with the header sockets on the HackRF. The PortaPack should line up directly above the HackRF, and the five mounting holes should line up, too.
+* With the headers lined up, rest the PortaPack on top of the HackRF. Gently squeeze the two boards together near where the headers are. The gap between the HackRF's sockets and the PortaPack's pins should shrink and disappear once the boards come together.
+
 (TODO: photos/video still needed)
 
-## Install PortaPack Board Assembly into (optional) Case
+## Install PortaPack Board Assembly into Case
 
 If you got the optional aluminum case, here's how to install the PortaPack + HackRF board assembly into the case. All the necessary hardware and tools are included with the case.
 
