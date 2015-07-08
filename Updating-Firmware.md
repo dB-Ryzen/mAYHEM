@@ -13,6 +13,12 @@ You may download a [pre-built firmware package](http://www.sharebrained.com/down
 
 ## Flashing
 
+If you downloaded the pre-built package, change directories to where you unzipped the package.
+
+If you built your own firmware, the files you need are in the firmware/bootstrap subdirectory of your local portapack-hackrf repository.
+
+You will need two files: hackrf_one_usb_ram.dfu, which is the stock HackRF firmware, which provides a means to program the SPI flash. The SPI flash will be programmed with the second file, called image.bin.
+
 To install the firmware into the HackRF's SPI flash, run the DFU utility with the HackRF firmware built for RAM execution. Plug the HackRF into USB power while holding down the DFU button. Then run:
 
     dfu-util --device 1fc9:000c --download hackrf_one_usb_ram.dfu --reset
