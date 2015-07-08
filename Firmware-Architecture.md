@@ -1,5 +1,3 @@
-# Firmware Architecture
-
 The HackRF One's LPC4320 dual-core microcontroller has limited resources for doing software-defined radio work. There's a total of 200Kbytes of RAM and 1Mbyte of SPI flash memory.
 
 ## Memory Map
