@@ -26,16 +26,17 @@ Here's a video of how it's done (links to YouTube):
 
 ## Install PortaPack Board Assembly into (optional) Case
 
-If you got the optional aluminum case, here's how to install the PortaPack + HackRF board assembly into the case.
+If you got the optional aluminum case, here's how to install the PortaPack + HackRF board assembly into the case. All the necessary hardware and tools are included with the case.
 
 * For each of the five mounting holes:
-    * Take an M3 bolt and thread an M3 tooth-lock washer on to it.
+    * Take a bolt and thread a tooth-lock washer on to it.
     * Take a spacer and insert it between the PortaPack and HackRF boards, at the position of the mounting hole.
-    * Insert the bolt-washer combination through the mounting hole in the PortaPack, the spacer, and the HackRF.
+    * Insert the bolt-washer combination through the PortaPack, the spacer, and the HackRF.
 * One side of the board stack has two gold SMA connectors. Insert those connectors through the corresponding large, round holes inside the case.
 * The two bolts closest to the two SMA connectors need to be pulled up about one centimeter (half an inch) to clear the bottom of the case.
-* Rock the opposite edge of the board assembly so that it drops into the case.
-* Re-attach the gold washers and nuts onto the three SMA connectors. Install them in this order: smooth washer, tooth-lock washer, nut.
+* Gently rock the opposite edge of the board assembly so that it drops into the case. This does _not_ require any force. If it does require force, something is wrong.
+* Using the provided 2.5mm hex/Allen wrench, _gently_ tighten the five bolts.
+* Re-attach the gold washers and nuts onto the three SMA connectors. Install them in this order: smooth washer, tooth-lock washer, nut. Finger-tightening the nuts is enough.
 * Re-attach the three red "nipples".
 
 Here's a video of how it's done (links to YouTube):
