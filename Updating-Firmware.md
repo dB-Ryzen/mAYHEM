@@ -1,5 +1,9 @@
 The PortaPack has its own firmware, which needs to be flashed into the HackRF One SPI flash.
 
+## Getting the Firmware
+
+You may download a [pre-built firmware package](http://www.sharebrained.com/downloads/portapack/firmware/portapack-firmware-20150708.zip), or [build your own firmware](Building-Firmware).
+
 ## Flashing
 
 To install the firmware into the HackRF's SPI flash, run the DFU utility with the HackRF firmware built for RAM execution. Plug the HackRF into USB power while holding down the DFU button. Then run:
@@ -8,8 +12,7 @@ To install the firmware into the HackRF's SPI flash, run the DFU utility with th
 
 Then, erase the flash and write the Cortex-M4 and -M0 code into the SPI flash at the proper locations:
 
-    hackrf_spiflash -w portapack_hackrf.bin
-    hackrf_spiflash -d -a 131072 -w portapack_hackrf_m0.bin
+    hackrf_spiflash -w image.bin
 
 Unplug your HackRF for a few seconds and plug it back in. You should now be running PortaPack code.
 
