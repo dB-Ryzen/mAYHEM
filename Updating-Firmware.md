@@ -4,7 +4,7 @@ The PortaPack has its own firmware, which needs to be flashed into the HackRF On
 
 You will need a few tools installed on your computer before you begin.
 
-* [dfu-util](http://dfu-util.sourceforge.net) - Use the 0.7 release. Newer releases remove the necessary "-s" option.
+* [dfu-util](http://dfu-util.sourceforge.net) - Used to load and run the stock HackRF firmware from RAM.
 * [hackrf](https://github.com/mossmann/hackrf) - All you need is the host tools, specifically, hackrf_spiflash.
 
 ## Getting the Firmware
