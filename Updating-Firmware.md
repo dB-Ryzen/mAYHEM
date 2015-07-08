@@ -1,5 +1,3 @@
-# Overview
-
 The PortaPack has its own firmware, which needs to be flashed into the HackRF One SPI flash.
 
 # Flashing
