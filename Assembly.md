@@ -1,5 +1,3 @@
-## Overview
-
 The PortaPack H1 must be attached to a HackRF One. Here are the steps:
 
 ### Extract the HackRF One Circuit Board
