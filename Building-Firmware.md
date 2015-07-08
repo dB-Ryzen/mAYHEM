@@ -1,6 +1,8 @@
-The PortaPack has its own firmware. Here's how to build it from scratch:
+The PortaPack has its own firmware. You may [use a prebuilt package](Updating-Firmware). If you prefer to build from scratch, here's how:
 
 ## Tools
+
+You will need a few tools installed on your computer before you begin.
 
 * [GCC-ARM-Embedded](https://launchpad.net/gcc-arm-embedded) - I am using the "4.9-2015-q2" release.
 * [dfu-util](http://dfu-util.sourceforge.net) - Use the 0.7 release. Newer releases remove the necessary "-s" option.
