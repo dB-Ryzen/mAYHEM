@@ -37,3 +37,7 @@ If you got the optional aluminum case, here's how to install the PortaPack + Hac
 * Rock the opposite edge of the board assembly so that it drops into the case.
 * Re-attach the gold washers and nuts onto the three SMA connectors. Install them in this order: smooth washer, tooth-lock washer, nut.
 * Re-attach the three red "nipples".
+
+Here's a video of how it's done (links to YouTube):
+
+[![On YouTube: Installing a PortaPack into the Aluminum Case](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/portapack_encase_youtube.jpg)](https://youtu.be/5r_7QCcSUEA "Installing a PortaPack into the Aluminum Case")
