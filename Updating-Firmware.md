@@ -40,3 +40,7 @@ The HackRF firmware is now running from the microcontroller's RAM. Do not reset 
     hackrf_spiflash -w hackrf_one_usb_rom_to_ram.bin
 
 Once this command completes, you may either unplug the HackRF or press the RESET button, and the HackRF firmware will run from the flash memory.
+
+## Docuemnt TODOs
+
+*  Diagram of DFU button location
