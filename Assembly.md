@@ -26,7 +26,7 @@ The PortaPack H1 and HackRF One attach via three headers. The HackRF One has thr
 * Line up the PortaPack header pin arrays with the header sockets on the HackRF. The PortaPack should line up directly above the HackRF, and the five mounting holes should line up, too.
 * With the headers lined up, rest the PortaPack on top of the HackRF. Gently squeeze the two boards together near where the headers are. The gap between the HackRF's sockets and the PortaPack's pins should shrink and disappear once the boards come together.
 
-(TODO: photos/video still needed)
+[![On YouTube: How to Attach a PortaPack H1 to your HackRF One](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/portapack_stacking_youtube.jpg)](https://youtu.be/9jw44trQyHg "PortaPack H1 Stacking")
 
 ### Install PortaPack Board Assembly into Case
 
