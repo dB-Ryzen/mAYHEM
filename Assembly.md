@@ -39,6 +39,7 @@ If you got the optional aluminum case, here's how to install the PortaPack + Hac
 * One side of the board stack has two gold SMA connectors. Insert those connectors through the corresponding large, round holes inside the case.
 * The two bolts closest to the two SMA connectors need to be pulled up about one centimeter (half an inch) to clear the bottom of the case.
 * Gently rock the opposite edge of the board assembly so that it drops into the case. This does _not_ require any force. If it does require force, something is wrong.
+* Check that the micro USB connector is not caught on the inside of the case. It should pass through the connector-shaped hole in the case, without touching the case.
 * Using the provided 2.5mm hex/Allen wrench, _gently_ tighten the five bolts.
 * Re-attach the gold washers and nuts onto the three SMA connectors. Install them in this order: smooth washer, tooth-lock washer, nut. Finger-tightening the nuts is enough.
 * Re-attach the three red "nipples".
