@@ -29,6 +29,8 @@ Make the SPI flash binary image (which builds the bootstrap, application, and ba
 
 Once you have built the binary, you must program it into the HackRF One SPI flash.
 
+## Flashing
+
 Hold down the HackRF DFU button. Press and release the HackRF reset button. Then release the DFU button. The HackRF is now in DFU mode.
 
 Program the HackRF's SPI flash:
