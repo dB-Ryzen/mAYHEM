@@ -13,7 +13,7 @@ You may download a [pre-built firmware package](https://github.com/sharebrained/
 
 ## Flashing
 
-If you downloaded the pre-built package, change directories to where you unzipped the package.
+If you downloaded the pre-built package, change directories to where you unzipped or untarred/unbzipped the package.
 
 If you built your own firmware, the files you need are in the firmware/ subdirectory of your local portapack-hackrf repository.
 
@@ -33,7 +33,11 @@ Unplug your HackRF from your computer, wait a few seconds, and plug it back in. 
 
 ## Restoring HackRF Firmware
 
-To replace the firmware on the HackRF's SPI flash with the stock HackRF firmware, plug the HackRF into USB power while holding down the DFU button. Then run:
+Download the HackRF firmware from the [HackRF project's releases section](https://github.com/mossmann/hackrf/releases/). Extract the release archive and change directories into the archive. Then change directories into firmware-bin:
+
+    cd firmware-bin
+
+Plug the HackRF into USB power while holding down the DFU button. Then run:
 
     dfu-util --device 1fc9:000c --download hackrf_one_usb_ram.dfu --reset
 
