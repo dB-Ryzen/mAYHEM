@@ -19,15 +19,17 @@ If you built your own firmware, the files you need are in the firmware/ subdirec
 
 You will need two files: hackrf_one_usb_ram.dfu, which is the stock HackRF firmware, which provides a means to program the SPI flash. The SPI flash will be programmed with the second file, called portapack-h1-firmware.bin.
 
-To install the firmware into the HackRF's SPI flash, run the DFU utility with the HackRF firmware built for RAM execution. Plug the HackRF into USB power while holding down the DFU button. Then run:
+To install the firmware into the HackRF's SPI flash, hold down the HackRF's DFU button and plug the HackRF into a USB port on your computer. After the HackRF is plugged in, you may release the DFU button.
+
+Use the DFU utility to download the hackrf_one_usb_ram.dfu image file into the HackRF:
 
     dfu-util --device 1fc9:000c --download hackrf_one_usb_ram.dfu --reset
 
-Then, erase the flash and write the Cortex-M4 and -M0 code into the SPI flash at the proper locations:
+Then, erase the HackRF SPI flash and write the PortaPack code into SPI flash:
 
     hackrf_spiflash -w portapack-h1-firmware.bin
 
-Unplug your HackRF for a few seconds and plug it back in. You should now be running PortaPack code.
+Unplug your HackRF from your computer, wait a few seconds, and plug it back in. You should now be running PortaPack code.
 
 ## Restoring HackRF Firmware
 
