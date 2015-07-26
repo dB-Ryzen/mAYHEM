@@ -19,12 +19,20 @@ Change directories into the cloned repository.
 
 ## Building
 
-Change directories into the "firmware/boostrap" subdirectory.
+Change directories into the "firmware" subdirectory.
 
-    cd firmware/bootstrap
+    cd firmware
 
 Make the SPI flash binary image (which builds the bootstrap, application, and baseband binaries):
 
     make
 
-Once you have a built binary, you need to [Update the Firmware](Updating-Firmware) on the HackRF One.
+Once you have built the binary, you must program it into the HackRF One SPI flash.
+
+Hold down the HackRF DFU button. Press and release the HackRF reset button. Then release the DFU button. The HackRF is now in DFU mode.
+
+Program the HackRF's SPI flash:
+
+    make program
+
+When finished, press the reset button on the HackRF. The PortaPack code is now running from the SPI flash on the HackRF.
