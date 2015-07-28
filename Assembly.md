@@ -22,6 +22,8 @@ Here's a video of how it's done (links to YouTube):
 
 The PortaPack H1 and HackRF One attach via three headers. The HackRF One has three black female header sockets. The PortaPack H1 has three black and silver male header pin arrays.
 
+__NOTE: The HackRF Blue has a minor mechanical incompatibility. A header present only on the HackRF Blue interferes with the audio capacitors on the PortaPack__
+
 * Remove the placement caps (little black caps) from the three headers on the PortaPack.
 * Line up the PortaPack header pin arrays with the header sockets on the HackRF. The PortaPack should line up directly above the HackRF, and the five mounting holes should line up, too.
 * With the headers lined up, rest the PortaPack on top of the HackRF. Gently squeeze the two boards together near where the headers are. The gap between the HackRF's sockets and the PortaPack's pins should shrink and disappear once the boards come together.
