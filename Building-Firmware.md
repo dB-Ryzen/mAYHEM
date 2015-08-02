@@ -40,3 +40,8 @@ Program the HackRF's SPI flash:
     make program
 
 When finished, press the reset button on the HackRF. The PortaPack code is now running from the SPI flash on the HackRF.
+
+If using dfu-util 0.8 you will get an error. This is the workaround
+
+    dfu-util --device 1fc9:000c --download hackrf_one_usb_ram.dfu --reset
+    hackrf_spiflash -w portapack-h1-firmware.bin
