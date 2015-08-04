@@ -49,3 +49,7 @@ If you got the optional aluminum case, here's how to install the PortaPack + Hac
 Here's a video of how it's done (links to YouTube):
 
 [![On YouTube: Installing a PortaPack into the Aluminum Case](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/portapack_encase_youtube.jpg)](https://youtu.be/5r_7QCcSUEA "Installing a PortaPack into the Aluminum Case")
+
+### Finishing Up
+
+Now that you've assembled your PortaPack, you must [install the PortaPack firmware](Updating-Firmware).
