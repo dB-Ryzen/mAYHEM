@@ -1,10 +1,10 @@
 The boot process is a bit of madness, but justifiable madness.
 
-## Overview
+### Overview
 
-The LPC4320 bootloader initializes the Cortex-M4F core to boot from the start of external SPI flash. The M0 core stays in reset.
+The LPC4320 bootloader initializes the Cortex-M4F core to boot from the start of external SPI flash. The M0 core stays in reset. The bootstrap code runs from SPI flash, on the Cortex-M4F. The bootstrap initializes the Cortex-M0 to execute the application code from SPI flash, then sleeps. The application code copies the baseband code into RAM, configures the Cortex-M4F to run from RAM, then resets the Cortex-M4F to begin baseband execution.
 
-The bootstrap code runs from SPI flash, on the Cortex-M4F. The bootstrap initializes the Cortex-M0 to execute the application code, then sleeps. The application code configures the Cortex-M4F to run the baseband code.
+(TODO: A diagram would be helpful, showing the M4F and M0 activities vs. time.)
 
 ### Bootstrap
 
