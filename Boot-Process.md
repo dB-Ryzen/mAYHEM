@@ -1,20 +1,33 @@
-### ChibiOS initialization sequence
+The boot process is a bit of madness, but justifiable madness.
+
+## Overview
+
+The LPC4320 bootloader initializes the Cortex-M4F core to boot from the start of external SPI flash. The M0 core stays in reset.
+
+The bootstrap code runs from SPI flash, on the Cortex-M4F. The bootstrap initializes the Cortex-M0 to execute the application code, then sleeps. The application code configures the Cortex-M4F to run the baseband code.
+
+### Bootstrap
+
+In the PortaPack image, the Cortex-M4F "bootstrap" image is located at the start of SPI flash. The bootstrap code configures SPIFI to run at maximum speed. Then, it initializes the Cortex-M0's memory map to point at the "application" image in SPI flash, and releases the Cortex-M0 from reset. The bootstrap then sleeps the Cortex-M4.
+
+### Application
 
 On the Cortex-M0 core, boot time looks like this:
 
     ResetHandler:
-        Initialize FPU (only for the Cortex-M4F)
-        Initialize stacks (fill with pattern)
+        Initialize process stack pointer
+        Initialize stack RAM regions (fill with pattern)
         __early_init()
             Enable extra processor exceptions for debugging
-        Init data segment (flash -> data)
-        Initialize BSS (fill with 0)
+        Init data segment (copy SPI flash -> data region in RAM)
+        Initialize BSS (fill RAM region with 0)
         __late_init()
-            reset_peripherals()
+            reset()
+                Reset most peripherals -- not SCU, SPIFI, or M0APP
             halInit()
                 hal_lld_init()
-                    Init timer 3 as cycle counter
-                    Init RIT as SysTick
+                    Init timer 3 as cycle counter (no DWT on M0)
+                    Init RIT as SysTick (no SysTick on M0)
                 palInit()
                 gptInit()
                 i2cInit()
@@ -23,7 +36,48 @@ On the Cortex-M0 core, boot time looks like this:
                 rtcInit()
                 boardInit()
             chSysInit()
+                port_init()
+                _scheduler_init()
+                _vt_init()
+                _core_init()
+                _heap_init()
+                chSysEnable()
+                chThdCreateStatic(_idle_thread_wa, ...)
         Constructors
         main()
         Destructors
-        _default_exit() (default is infinite loop)
+        _default_exit()
+            while(1);
+
+### Baseband
+
+On the Cortex-M4F core, these are the stages a baseband image moves through:
+
+    ResetHandler:
+        Initialize process stack pointer
+        Initialize FPU
+        Initialize stack RAM regions (fill with pattern)
+        __early_init()
+            Enable extra processor exceptions for debugging
+        Init data segment (copy SPI flash -> data region in RAM)
+        Initialize BSS (fill RAM region with 0)
+        __late_init()
+            halInit()
+                hal_lld_init()
+                    Init SysTick
+                    Init DWT as cycle counter
+                # Baseband controls no hardware, so no hardware init here.
+                boardInit()
+            chSysInit()
+                port_init()
+                _scheduler_init()
+                _vt_init()
+                _core_init()
+                _heap_init()
+                chSysEnable()
+                chThdCreateStatic(_idle_thread_wa, ...)
+        Constructors
+        main()
+        Destructors
+        _default_exit()
+            while(1);
