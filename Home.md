@@ -16,4 +16,5 @@ The PortaPack is a hardware add-on for the HackRF One software-defined radio.
 * [Firmware Architecture](Firmware Architecture)
 * [UI Framework](UI Framework)
 * [Boot Process](Boot Process)
+* [Operating System Notes](Operating System Notes)
 * [Hardware](Hardware)
