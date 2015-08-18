@@ -31,6 +31,8 @@ Then, erase the HackRF SPI flash and write the PortaPack code into SPI flash:
 
 Unplug your HackRF from your computer, wait a few seconds, and plug it back in. You should now be running PortaPack code.
 
+**NOTE**: If you have never updated your HackRF CPLD bitstream, you might also want to do that now, [as advised under "Updating the CPLD" on the HackRF Wiki](https://github.com/mossmann/hackrf/wiki/Updating-Firmware). There was a change around April 2014 that is required for PortaPack and newer gr-osmosdr host libraries. If the HackRF CPLD bitstream is old, you may encounter odd behavior -- frequencies being a few MHz off, and lots of baseband harmonic distortion.
+
 ## Restoring HackRF Firmware
 
 Download the HackRF firmware from the [HackRF project's releases section](https://github.com/mossmann/hackrf/releases/). Extract the release archive and change directories into the archive. Then change directories into firmware-bin:
