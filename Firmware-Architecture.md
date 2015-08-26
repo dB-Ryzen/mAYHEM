@@ -1,5 +1,20 @@
 The HackRF One's LPC4320 dual-core microcontroller has limited resources for doing software-defined radio work. There's a total of 200Kbytes of RAM and 1Mbyte of SPI flash memory.
 
+## Division of Labor
+
+There are two cores in the LPC4320:
+
+* Cortex-M4F, which performs baseband signal processing.
+* Cortex-M0, which does all user interface tasks, and simple signal/packet post-processing.
+
+The Cortex-M4F firmware has three ChibiOS threads:
+
+* Baseband: Receives buffers of baseband samples and processes them to recove audio, packets, or whatever.
+* RSSI: Receives buffers of RSSI (received signal strength indication) samples and processes them to produce metrics for display. May be used in the future to trigger signal captures and provide receiver AGC for some receiver modes.
+* Default: The thread executed inside main() that receives events from the other threads, and messages from the M0 (UI) core.
+
+The Cortex-M0 firmware has only one thread, the default, which waits for events signaled from interrupts and for messages received from the M4 (baseband) core.
+
 ## Memory Map
 
 Absolute addresses on the HackRF One LPC4320:
