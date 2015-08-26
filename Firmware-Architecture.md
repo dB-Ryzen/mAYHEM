@@ -7,9 +7,9 @@ There are two cores in the LPC4320:
 * Cortex-M4F, which performs baseband signal processing.
 * Cortex-M0, which does all user interface tasks, and simple signal/packet post-processing.
 
-The Cortex-M4F firmware has three ChibiOS threads:
+The Cortex-M4F firmware has three ChibiOS threads, listed in decreasing priority:
 
-* Baseband: Receives buffers of baseband samples and processes them to recove audio, packets, or whatever.
+* Baseband: Receives buffers of baseband samples and processes them to recover audio, packets, or whatever.
 * RSSI: Receives buffers of RSSI (received signal strength indication) samples and processes them to produce metrics for display. May be used in the future to trigger signal captures and provide receiver AGC for some receiver modes.
 * Default: The thread executed inside main() that receives events from the other threads, and messages from the M0 (UI) core.
 
