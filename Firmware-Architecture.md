@@ -22,7 +22,7 @@ Absolute addresses on the HackRF One LPC4320:
     0x0000_0000 0x1000_0000     Shadow area (controlled by CREG M4MEMMAP and M0APPMEMMAP)
     0x1000_0000 0x1001_8000 96k Local SRAM
     0x1008_0000 0x1008_8000 32k Local SRAM
-    0x1008_8000 0x1008_a000  8k Local SRAM (VBAT domain)
+    0x1008_8000 0x1008_a000  8k Local SRAM
     0x1400_0000 0x1410_0000  1M SPIFI flash (cached access to W25Q80BV flash IC)
     0x2000_0000 0x2000_8000 32k AHB SRAM
     0x2000_8000 0x2000_c000  8k AHB SRAM
@@ -37,7 +37,7 @@ How RAM and flash regions are used in PortaPack code:
 
     0x1000_0000 0x1001_8000 96k Local SRAM for M4 RAM (stack, heap, data)
     0x1008_0000 0x1008_8000 32k Local SRAM for M4 code (text section)
-    0x1008_8000 0x1008_a000  8k Local SRAM for M4/M0 communication, persistent state
+    0x1008_8000 0x1008_a000  8k Local SRAM for M4/M0 communication
     0x1400_0000 0x1410_0000  1M SPIFI flash for M4 bootstrap, M0 code, M4 code overlays
     0x2000_0000 0x2001_0000 64k AHB SRAM for M0 RAM (stack, heap, data)
 
@@ -51,7 +51,7 @@ M0 code is run from flash (mostly) because the UI and non-critical code is much 
 
 M0 data is in the AHB RAM region, to avoid contention with the M4 core's code and data.
 
-The VBAT domain local SRAM block is used for communication between cores. It's also used to save data to re-initialize the device at power-up and return the user to the state before power-off. M0 code should avoid reading from this region any more than necessary, to avoid slowing down the M4 core.
+There is a small region of VBAT-maintained SRAM (0x40041000, 256 bytes) for saving system state when the device is powered off.
 
 M4 and M0 data RAM is accessed via direct addressing. This permits passing pointers between the M4 and M0. Of course, passing pointers to the M4 or M0 text sections (RAM shadowed/aliased to 0x0) wouldn't work without some sort of address fix-up to point into M4 RAM or the M0 SPIFI image.
 
