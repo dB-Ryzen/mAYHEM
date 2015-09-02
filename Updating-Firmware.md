@@ -9,7 +9,7 @@ You will need a few tools installed on your computer before you begin.
 
 ## Getting the Firmware
 
-You may download a [pre-built firmware package](https://github.com/sharebrained/portapack-hackrf/releases), or [build your own firmware](Building-Firmware).
+You may download a [released firmware package](https://github.com/sharebrained/portapack-hackrf/releases), a [continuous integration build of the latest firmware](https://travis-ci.org/sharebrained/portapack-hackrf/) or [build your own firmware](Building-Firmware).
 
 ## Flashing
 
