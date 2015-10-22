@@ -2,7 +2,7 @@ The PortaPack has its own firmware, which needs to be flashed into the HackRF On
 
 ## Tools
 
-If you're using Windows, you get [your own set of instructions](UpdatingFirmwareWindows)!
+If you're using Windows, you get [your own set of instructions](Updating Firmware Windows)!
 
 For Linux and Mac OS X users, you will need a few tools installed on your computer before you begin:
 
