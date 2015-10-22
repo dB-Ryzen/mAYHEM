@@ -12,7 +12,7 @@ You will be asked to accept the GNU General Public License Version 2. Click "I A
 
 ![Accept the GNU GPLv2 license](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/windows/gpl_v2_accept_win81.png)
 
-You will be asked twice to install device software from ShareBrained Technology. The first is for the HackRF driver, and the second is for the NXP LPC DFU mode driver. Click "Install" both times. Or if you're feeling especially bold, you can check "Always trust software from ShareBrained Technology, Inc.".
+You will be asked twice to install device software from ShareBrained Technology. The first is for the HackRF driver, and the second is for the NXP LPC DFU mode driver. Click "Install" both times. Or if you're feeling especially bold, you can check "Always trust software from ShareBrained Technology, Inc.", and Windows will never ask again if you trust ShareBrained Technology.
 
 ![Install device software from ShareBrained Technology](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/windows/install_device_firmware_sharebrained_win81.png)
 
