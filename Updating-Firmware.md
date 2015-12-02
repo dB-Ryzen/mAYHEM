@@ -11,7 +11,11 @@ For Linux and Mac OS X users, you will need a few tools installed on your comput
 
 ## Getting the Firmware
 
-You may download a [released firmware package](https://github.com/sharebrained/portapack-hackrf/releases), a [continuous integration build of the latest firmware](https://travis-ci.org/sharebrained/portapack-hackrf/) or [build your own firmware](Building-Firmware).
+Firmware is available three ways:
+
+* Download a [released firmware package](https://github.com/sharebrained/portapack-hackrf/releases).
+* Download a [continuous integration build of the latest firmware](https://travis-ci.org/sharebrained/portapack-hackrf/). ![Build Status](https://travis-ci.org/sharebrained/portapack-hackrf.svg?branch=master)
+* [Build your own firmware](Building-Firmware).
 
 ## Flashing
 
