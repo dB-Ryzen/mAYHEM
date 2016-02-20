@@ -9,8 +9,10 @@ The PortaPack is a hardware add-on for the HackRF One software-defined radio.
 
 ## Use
 
-* [Receiver Mode](Receiver Mode)
+* [Audio Modes](Audio Modes) - AM, SSB, FM.
+* [Digital Modes](Digital Modes) - AIS, ERT, TPMS
 * [Configuration](Configuration)
+* [Debugging](Debugging)
 
 ## Design
 
