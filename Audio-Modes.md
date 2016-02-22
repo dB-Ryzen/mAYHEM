@@ -17,7 +17,7 @@ The headphone volume adjusts from 0 to 99. Higher values can be very loud, so be
 
 The tuning frequency is in MHz, and ranges from 0.0000 MHz (0Hz, DC) to 7250.0000 MHz (7.25 GHz), with varying levels of sensitivity.
 
-When the tuning frequency field is highlighted, pressing the "select" button on the navigation control displays the frequency entry keypad. This keypad can be operated by touch screen or with the navigation controls.
+When the tuning frequency field is highlighted, pressing the "select" button on the navigation control displays the frequency entry keypad. This keypad can be operated by touch screen or with the navigation controls. The "." (period) button changes the entry position between the left and right sides of the frequency decimal point. The "<" button deletes a digit.
 
 ![PortaPack receiver frequency keypad](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/ui/audio/frequency_keypad.png)
 
