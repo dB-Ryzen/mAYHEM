@@ -1,5 +1,34 @@
 An analog audio receiver is available via the "Receiver->Audio" menu path. Common AM and FM modes are implemented.
 
+There are several controls common to the various modulations:
+
+![PortaPack receiver controls](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/ui/audio/rx_controls.png)
+
+The modulation can be set to:
+
+* AM: amplitude modulation, including SSB and DSB).
+* NFM: narrowband frequency modulation.
+* WFM: wideband frequency modulation, e.g. FM broadcast.
+* SPEC: spectrum analysis, approximately 15 MHz wide.
+
+The IF and baseband gains control the gain of the second intermediate frequency IC in the HackRF.
+
+The headphone volume adjusts from 0 to 99. Higher values can be very loud, so be careful!
+
+The tuning frequency is in MHz, and ranges from 0.0000 MHz (0Hz, DC) to 7250.0000 MHz (7.25 GHz), with varying levels of sensitivity.
+
+When the tuning frequency field is highlighted, pressing the "select" button on the navigation control displays the frequency entry keypad. This keypad can be operated by touch screen or with the navigation controls.
+
+![PortaPack receiver frequency keypad](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/ui/audio/frequency_keypad.png)
+
+Three colored bars display the received signal strength, baseband signal strength, and output audio level:
+
+![PortaPack receiver levels](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/ui/audio/rx_levels.png)
+
+All receiver views display a spectrum waterfall. Along the top is a ruler indicating the width of the view. The channel bandwidth (pass band) is depicted by green and yellow bars. The green region is the channel filter pass band, and the yellow bars are the channel filter transition regions.
+
+![PortaPack receiver levels](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/ui/audio/waterfall.png)
+
 ### Narrowband amplitude modulation (AM):
 
 Supported modes:
