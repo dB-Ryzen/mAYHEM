@@ -1,6 +1,10 @@
 If you're using Windows, use the PortaPack Firmware Tool to put PortaPack firmware into your HackRF One. Here's the procedure:
 
-Download and run this installer: [PortaPack Firmware Tool](http://www.sharebrained.com/downloads/portapack/windows/PortaPack%20Firmware%20Tool-1.0.0.exe) (1.0.0, 64-bit only, 3.16Mbytes)
+Download and run the PortaPack Firmware Tool installer:
+
+| File | Type | Size | MD5 | SHA1 |
+| ---- | ---- | ---- | --- | ---- |
+| [PortaPack Firmware Tool-20160222.exe](http://www.sharebrained.com/downloads/portapack/windows/PortaPack%20Firmware%20Tool-20160222.exe) | 64-bit | 3.35Mbytes | 2cbdb96c4720ca149cd26c56d8706f89 | 2016927b066c8e722d17051660979947d97530db |
 
 Windows SmartScreen may warn you about running this program. If so, tell Windows to run the program anyway.
 
