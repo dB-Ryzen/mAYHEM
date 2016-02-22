@@ -16,7 +16,7 @@ Starting with a HackRF One in its case:
 
 Here's a video of how it's done (links to YouTube):
 
-[![On YouTube: How to Open a HackRF One Case](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/hackrf_one_decase_youtube.jpg)](https://youtu.be/zuXJtpTSEJM "How to Open a HackRF One Case")
+[![On YouTube: How to Open a HackRF One Case](images/hackrf_one_decase_youtube.jpg)](https://youtu.be/zuXJtpTSEJM "How to Open a HackRF One Case")
 
 ### Attach PortaPack H1 to HackRF One
 
@@ -28,7 +28,7 @@ __NOTE: The HackRF Blue has a minor mechanical incompatibility. A header present
 * Line up the PortaPack header pin arrays with the header sockets on the HackRF. The PortaPack should line up directly above the HackRF, and the five mounting holes should line up, too.
 * With the headers lined up, rest the PortaPack on top of the HackRF. Gently squeeze the two boards together near where the headers are. The gap between the HackRF's sockets and the PortaPack's pins should shrink and disappear once the boards come together.
 
-[![On YouTube: How to Attach a PortaPack H1 to your HackRF One](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/portapack_stacking_youtube.jpg)](https://youtu.be/9jw44trQyHg "PortaPack H1 Stacking")
+[![On YouTube: How to Attach a PortaPack H1 to your HackRF One](images/portapack_stacking_youtube.jpg)](https://youtu.be/9jw44trQyHg "PortaPack H1 Stacking")
 
 ### Install PortaPack Board Assembly into Case
 
@@ -48,7 +48,7 @@ If you got the optional aluminum case, here's how to install the PortaPack + Hac
 
 Here's a video of how it's done (links to YouTube):
 
-[![On YouTube: Installing a PortaPack into the Aluminum Case](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/portapack_encase_youtube.jpg)](https://youtu.be/5r_7QCcSUEA "Installing a PortaPack into the Aluminum Case")
+[![On YouTube: Installing a PortaPack into the Aluminum Case](images/portapack_encase_youtube.jpg)](https://youtu.be/5r_7QCcSUEA "Installing a PortaPack into the Aluminum Case")
 
 ### Finishing Up
 

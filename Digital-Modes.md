@@ -10,11 +10,11 @@ The PortaPack AIS receiver decodes information coming from vessels and base stat
 
 The recents view shows two columns, the [Maritime Mobile Service Identity](https://en.wikipedia.org/wiki/Maritime_Mobile_Service_Identity) (MMSI) and the vessel name or call sign, if it was received.
 
-![PortaPack AIS receiver recents view](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/ui/digital/ais/ais_recents.png)
+![PortaPack AIS receiver recents view](images/ui/digital/ais/ais_recents.png)
 
 The MMSI detail view shows the most recent details received from the source.
 
-![PortaPack AIS receiver detail view](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/ui/digital/ais/ais_detail.png)
+![PortaPack AIS receiver detail view](images/ui/digital/ais/ais_detail.png)
 
 If a FAT-formatted micro SD card is present when this mode is entered, the receiver will log received packets to a file named "AIS.TXT". The log file contains one line per length- and CRC-validated packet received. Each line consists of a timestamp in sortable "YYYYMMDDHHMMSS" format and the decoded packet contents. An example:
 
@@ -33,7 +33,7 @@ If a FAT-formatted micro SD card is present when this mode is entered, the recei
 
 The PortaPack ERT receiver monitors approximately 2.5 MHz centered around 911.6 MHz. It does not implement channel filters, so sensitivity is reduced in exchange for monitoring more simultaneous "channels".
 
-![PortaPack ERT receiver recents view](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/ui/digital/ert/ert_recents.png)
+![PortaPack ERT receiver recents view](images/ui/digital/ert/ert_recents.png)
 
 (IDs partially obscured to protect privacy.)
 
@@ -62,7 +62,7 @@ The PortaPack TPMS receiver decodes the following modulations and encodings:
 
 The recents view shows five columns: a signal/packet type, a transmitter unique ID, tire pressure in kilopascals, tire temperature in Celsius, and a count of packets received from the transmitter. The signal/packet type is arbitrarily defined by me. The tire pressure and temperature are approximate, as I have only indirectly observed and correlated these properties from cars where I live.
 
-![PortaPack TPMS receiver recents view](https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/wiki/ui/digital/tpms/tpms_recents.png)
+![PortaPack TPMS receiver recents view](images/ui/digital/tpms/tpms_recents.png)
 
 (IDs partially obscured to protect privacy.)
 
