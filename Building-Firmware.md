@@ -4,7 +4,7 @@ The PortaPack has its own firmware. You may [use a prebuilt package](Updating-Fi
 
 You will need a few tools installed on your computer before you begin.
 
-* [GCC-ARM-Embedded](https://launchpad.net/gcc-arm-embedded) - I am using the "4.9-2015-q2" release.
+* [GCC-ARM-Embedded](https://launchpad.net/gcc-arm-embedded) - I am using the "5.2-2015-q4" release.
 * [dfu-util](http://dfu-util.sourceforge.net) - Used to load and run the stock HackRF firmware from RAM.
 
 ## Getting the Source Code
@@ -41,7 +41,7 @@ Program the HackRF's SPI flash:
 
 When finished, press the reset button on the HackRF. The PortaPack code is now running from the SPI flash on the HackRF.
 
-If using dfu-util 0.8 you will get an error. This is the workaround
+If using dfu-util 0.8 you will get an error. This is the workaround:
 
     dfu-util --device 1fc9:000c --download hackrf_one_usb_ram.dfu --reset
     hackrf_spiflash -w portapack-h1-firmware.bin
