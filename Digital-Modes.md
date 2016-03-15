@@ -60,7 +60,11 @@ The PortaPack TPMS receiver decodes the following modulations and encodings:
 | --------- | ---------- | --------- | ----------- | ------------- | -------- | ----- |
 | 315.000 MHz | FSK | 38.4 kHz | 19.2 k/sec | 14 x "01", "10" | Manchester | Used by US Ford/Lincoln/Mercury vehicles, perhaps others? |
 
-The recents view shows five columns: a signal/packet type, a transmitter unique ID, tire pressure in kilopascals, tire temperature in Celsius, and a count of packets received from the transmitter. The signal/packet type is arbitrarily defined by me. The tire pressure and temperature are approximate, as I have only indirectly observed and correlated these properties from cars where I live.
+A good location and good antenna are important for receiving TPMS signals. With a poor antenna, it is difficult to receive TPMS from a few meters away. With a good antenna, the range can be in the 20 meter range or more. I recommend a ~25cm monopole atop a ground plane (e.g. a magnetic mount antenna on a car roof or trunk/boot lid). The closer the antenna is to wheel height, the better.
+
+From experience, it seems TPMS sensors are best read from the side of a car. Locate your antenna with a good view of the wheels of as many cars as possible. It is a balancing act between being far enough to see a lot of car wheels, versus being too far away to receive the relatively weak TPMS signals.
+
+The TPMS receiver display shows five columns: a signal/packet type, a transmitter unique ID, tire pressure in kilopascals, tire temperature in Celsius, and a count of packets received from the transmitter. The signal/packet type is arbitrarily defined by me. The tire pressure and temperature are approximate, as I have only indirectly observed and correlated these properties from cars where I live.
 
 ![PortaPack TPMS receiver recents view](images/ui/digital/tpms/tpms_recents.png)
 
