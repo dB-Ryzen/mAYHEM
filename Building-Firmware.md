@@ -4,7 +4,7 @@ The PortaPack has its own firmware. You may [use a prebuilt package](Updating-Fi
 
 You will need a few tools installed on your computer before you begin.
 
-* [GCC-ARM-Embedded](https://launchpad.net/gcc-arm-embedded) - I am using the "5.2-2015-q4" release.
+* [GCC-ARM-Embedded](https://launchpad.net/gcc-arm-embedded) - I am using the "5.4-2016-q2" release.
 * [dfu-util](http://dfu-util.sourceforge.net) - Used to load and run the stock HackRF firmware from RAM.
 
 ## Getting the Source Code
