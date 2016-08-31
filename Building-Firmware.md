@@ -30,6 +30,8 @@ Make the SPI flash binary image (which builds the bootstrap, application, and ba
 
     make firmware
 
+The binary will be at "firmware/portapack-h1-firmware.bin".
+
 Once you have built the binary, you must program it into the HackRF One SPI flash.
 
 ## Flashing
