@@ -59,5 +59,4 @@ One configuration of wideband FM is supported -- 75kHz deviation, 200kHz bandwid
 ### To be implemented:
 
 * CW receive with tunable filter
-* Record to micro SD card
 * Transmit functions
