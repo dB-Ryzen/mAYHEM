@@ -14,7 +14,7 @@ The SD card status icon indicates if the SD card is present and functioning corr
 
 ## Receiver
 
-The PortaPack implements several varieties of [audio receiver](Audio Modes) and decodes some [digital transponder](Digital Modes) transmissions.
+The PortaPack implements several varieties of [audio receiver](Audio-Modes) and decodes some [digital transponder](Digital-Modes) transmissions.
 
 ![PortaPack receiver menu item](images/ui/general/menu_top_receiver.png)
 
