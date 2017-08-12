@@ -1,4 +1,4 @@
-If you're using Windows, use the PortaPack Firmware Tool to put PortaPack firmware into your HackRF One.
+If you're using Windows, use the PortaPack Firmware Tool to put PortaPack firmware into your HackRF One. Until you program the HackRF with the PortaPack-enhanced firmware, the PortaPack display will be blank and the controls will be non-responsive.
 
 Download and run the PortaPack Firmware Tool installer from the latest release on the [project releases page](https://github.com/sharebrained/portapack-hackrf/releases).
 
