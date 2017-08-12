@@ -1,4 +1,4 @@
-The PortaPack has its own firmware, which needs to be flashed into the HackRF One SPI flash.
+The PortaPack has its own firmware, which needs to be flashed into the HackRF One SPI flash. Until you program the HackRF with the PortaPack-enhanced firmware, the PortaPack display will be blank and the controls will be non-responsive.
 
 ## Tools
 
