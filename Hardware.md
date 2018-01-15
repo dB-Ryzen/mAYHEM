@@ -1,3 +1,7 @@
+## Audio Input/Output
+
+The single 1/8" (3.5mm) audio jack contains both a stereo headphone output and a microphone input with DC bias. The jack is compatible with newer smart phone headsets following [the CTIA/AHJ standard](https://en.wikipedia.org/wiki/TRRS_connector#TRRS_standards). Older PortaPacks (before version 20170522) will drive 50mW into 16 Ohms. Newer PortaPacks (as of version 20170522) will drive 20mW into 16 Ohms. Both are uncomfortably loud at full volume -- just sayin'...
+
 ## LCD
 
 The LCD is a LED-backlit TFT with 2.4" (61mm) of display area. PortaPack models before 20170522 use Kingtech DW0240A2BZ (16-bit 8080-I MCU interface, IM[3:0] = 0b0001) with resistive touch screen. PortaPack models as of 20170522 use EastRising ER-TFT024-3 with resistive touch screen (interface mode configured by PortaPack).
