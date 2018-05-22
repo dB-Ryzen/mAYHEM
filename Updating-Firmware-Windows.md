@@ -4,6 +4,8 @@ Download and run the PortaPack Firmware Tool installer from the latest release o
 
 Windows SmartScreen may warn you about running this program. If so, tell Windows to run the program anyway.
 
+Norton Security may detect "WS.Reputation.1". This is not a virus detection, but indicating that Norton is unfamiliar with this installer. Please [read their explanation of this warning](https://www.symantec.com/security-center/writeup/2010-051308-1854-99).
+
 You will be asked if you want to allow the program to make changes to your computer. Answer "Yes".
 
 ![Windows UAC warning for ShareBrained Technology](images/windows/uac_installer_sharebrained_win81.png)
