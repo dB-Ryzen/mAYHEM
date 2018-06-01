@@ -1,5 +1,9 @@
 If you're using Windows, use the PortaPack Firmware Tool to put PortaPack firmware into your HackRF One. Until you program the HackRF with the PortaPack-enhanced firmware, the PortaPack display will be blank and the controls will be non-responsive.
 
+Please note that you can't brick the HackRF, unless you physically damage the hardware somehow. The HackRF microcontroller contains ROM USB DFU bootloader code that can't be erased. So even if your firmware update goes horribly wrong, you will be able to reload code via this USB bootloader. For information on how to do this, see below: "Restoring HackRF Firmware".
+
+## Update Process
+
 Download and run the PortaPack Firmware Tool installer from the latest release on the [project releases page](https://github.com/sharebrained/portapack-hackrf/releases).
 
 Windows SmartScreen may warn you about running this program. If so, tell Windows to run the program anyway.
