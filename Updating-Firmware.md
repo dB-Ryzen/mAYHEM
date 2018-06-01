@@ -1,5 +1,7 @@
 The PortaPack has its own firmware, which needs to be flashed into the HackRF One SPI flash. Until you program the HackRF with the PortaPack-enhanced firmware, the PortaPack display will be blank and the controls will be non-responsive.
 
+Please note that you can't brick the HackRF, unless you physically damage the hardware somehow. The HackRF microcontroller contains ROM USB DFU bootloader code that can't be erased. So even if your firmware update goes horribly wrong, you will be able to reload code via this USB bootloader. For information on how to do this, see below: "Restoring HackRF Firmware".
+
 ## Tools
 
 If you're using Windows, you get [your own set of instructions](Updating-Firmware-Windows)!
