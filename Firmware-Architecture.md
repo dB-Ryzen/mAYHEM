@@ -41,6 +41,11 @@ How RAM and flash regions are used in PortaPack code:
     0x1400_0000 0x1410_0000  1M SPIFI flash for M4 bootstrap, M0 code, M4 code overlays
     0x2000_0000 0x2001_0000 64k AHB SRAM for M0 RAM (stack, heap, data)
 
+How RAM and flash regions are used in HackRF code (which is launched from PortaPack code):
+
+    0x1000_0000 0x1001_8000 96k Local SRAM for M4 code
+    0x1008_0000 0x1008_8000 32k Local SRAM for M4 stack and heap
+
 #### Philosophy
 
 M4 code is run from local SRAM for performance reasons. The smaller local SRAM region is used because DSP code tends to be tight loops and doesn't require much code.

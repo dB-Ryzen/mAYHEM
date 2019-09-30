@@ -8,7 +8,7 @@ The LPC4320 bootloader initializes the Cortex-M4F core to boot from the start of
 
 ### Bootstrap
 
-In the PortaPack image, the Cortex-M4F "bootstrap" image is located at the start of SPI flash. The bootstrap code configures SPIFI to run at maximum speed. Then, it initializes the Cortex-M0's memory map to point at the "application" image in SPI flash, and releases the Cortex-M0 from reset. The bootstrap then sleeps the Cortex-M4.
+In the PortaPack image, the Cortex-M4F "bootstrap" image is located at the start of SPI flash. It's executed by the LPC4320 built-in bootloader. The M4 clock is already set to 96MHz. The bootstrap code configures SPIFI to run at (approximately) maximum speed. Then, it initializes the Cortex-M0's memory map to point at the "application" image in SPI flash, and releases the Cortex-M0 from reset. The bootstrap then sleeps the Cortex-M4 until the M0 application needs to run baseband firmware on it.
 
 ### Application
 
