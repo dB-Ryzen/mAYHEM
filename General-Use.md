@@ -1,5 +1,7 @@
 The PortaPack boots almost instantly into the top menu. Turn the navigation wheel clockwise or counter-clockwise to change the selected menu item. You may also use the navigation up and down arrow buttons. Press navigation center button ("select") to choose the menu item.
 
+![PortaPack controls](images/ui/general/control_wheel_all.jpg)
+
 ## Status Bar
 
 The status bar is visible at all times, and provides tools and status for general operation.
