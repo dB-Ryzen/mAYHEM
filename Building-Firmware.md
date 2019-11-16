@@ -29,7 +29,7 @@ Make a "build" directory and initialize the CMake build files into that director
 
 Make the SPI flash binary image (which builds the bootstrap, application, and baseband binaries):
 
-    make <firmware_name>
+    make firmware
 
 The binary will be at "firmware/portapack-h1-firmware.bin".
 
@@ -43,6 +43,6 @@ Hold down the HackRF DFU button. Press and release the HackRF reset button. Wait
 
 Program the HackRF's SPI flash:
 
-    make <firmware_name>-program
+    make program
 
 When finished, press the reset button on the HackRF. The PortaPack code is now running from the SPI flash on the HackRF.
