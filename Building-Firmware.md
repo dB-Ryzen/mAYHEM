@@ -13,7 +13,7 @@ You will need a few tools installed on your computer before you begin.
 
 The source code is hosted on GitHub. Change to a directory where you want the source code, and clone the source repository.
 
-    git clone https://github.com/sharebrained/portapack-hackrf.git
+    git clone --recurse-submodules https://github.com/sharebrained/portapack-hackrf.git
 
 Change directories into the cloned repository.
 
