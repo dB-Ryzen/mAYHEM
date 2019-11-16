@@ -6,6 +6,7 @@ You will need a few tools installed on your computer before you begin.
 
 * [GCC-ARM-Embedded](https://launchpad.net/gcc-arm-embedded) - I am using the "6-2017-q2" release.
 * [CMake 2.8.9 or newer](https://cmake.org/download/) - Build system now uses CMake instead of GNU Make.
+* [PyYAML] for Python 2.7 (for libopencm3, built by hackrf submodule).
 * [dfu-util 0.7 or newer](http://dfu-util.sourceforge.net) - Used to load and run the stock HackRF firmware from RAM.
 
 ## Getting the Source Code
