@@ -4,6 +4,8 @@ Please note that you can't brick the HackRF, unless you physically damage the ha
 
 ## Update Process
 
+**Watch [a video](https://www.youtube.com/watch?v=5G5blPPIIBo) that demonstrates the process of installing or updating your HackRF to run PortaPack firmware!**
+
 Download and run the PortaPack Firmware Tool installer from the latest release on the [project releases page](https://github.com/sharebrained/portapack-hackrf/releases).
 
 Windows SmartScreen may warn you about running this program. If so, tell Windows to run the program anyway.
