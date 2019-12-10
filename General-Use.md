@@ -1,4 +1,5 @@
 * [Navigation Wheel](#navigation-wheel)
+* [MicroSD Card Socket](#microsd-card-socket)
 * [Status Bar](#status-bar)
 * [Receiver](#receiver)
 * [Setup](#setup)
@@ -15,6 +16,14 @@
 The PortaPack boots almost instantly into the top menu. Turn the navigation wheel clockwise or counter-clockwise to change the selected menu item. You may also use the navigation up and down arrow buttons. Press navigation center button ("select") to choose the menu item.
 
 ![PortaPack controls](images/ui/general/control_wheel_all.jpg)
+
+## microSD Card Socket
+
+The [microSD card](https://en.wikipedia.org/wiki/MicroSD#Micro-cards) socket is located along the top edge of the PortaPack, to the right of the LCD panel. The card must be inserted face down, as the socket is on the back side of the circuit board.
+
+Current firmware does not support [exFAT](https://en.wikipedia.org/wiki/ExFAT), as it is encumbered by Microsoft patents. Please ensure your microSD cards are formatted using the [FAT32](https://en.wikipedia.org/wiki/FAT32) format.
+
+Because the PortaPack has no control over power, and can therefore not perform a gentle shutdown, please ensure you have exited any PortaPack application that actively writes to the microSD card before you remove power. Otherwise, you may wind up with a damaged file or card formatting / partition. The main menu is a safe time to unplug the power.
 
 ## Status Bar
 
