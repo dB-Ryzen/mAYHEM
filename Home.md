@@ -1,5 +1,9 @@
 The PortaPack is a hardware add-on for the HackRF One software-defined radio.
 
+The hardware can be purchased [in the ShareBrained Store or resellers in the United States and European Union](https://store.sharebrained.com/products/portapack-for-hackrf-one-kit).
+
+<img src="https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/hardware/portapack_h1_operating.jpg" alt="PortaPack H1 in operation" width="50%" height="50%" style="transform:scale(0.5)">
+
 ## Getting Started
 
 * [Assembling your PortaPack](Assembly)
