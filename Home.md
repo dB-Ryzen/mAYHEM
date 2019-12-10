@@ -1,4 +1,4 @@
-The PortaPack is a hardware add-on for the HackRF One software-defined radio.
+The PortaPack is a hardware add-on for the [HackRF One software-defined radio](https://greatscottgadgets.com/hackrf/one/).
 
 <img src="https://raw.github.com/sharebrained/portapack-hackrf/master/doc/images/hardware/portapack_h1_operating.jpg" alt="PortaPack H1 in operation">
 
