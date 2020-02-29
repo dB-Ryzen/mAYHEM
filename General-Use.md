@@ -21,7 +21,11 @@ The PortaPack boots almost instantly into the top menu. Turn the navigation whee
 
 The [microSD card](https://en.wikipedia.org/wiki/MicroSD#Micro-cards) socket is located along the top edge of the PortaPack, to the right of the LCD panel. The card must be inserted face down, as the socket is on the back side of the circuit board.
 
-Current firmware does not support [exFAT](https://en.wikipedia.org/wiki/ExFAT), as it is encumbered by Microsoft patents. Please ensure your microSD cards are formatted using the [FAT32](https://en.wikipedia.org/wiki/FAT32) format.
+Current firmware does not support [exFAT](https://en.wikipedia.org/wiki/ExFAT), as it is encumbered by Microsoft patents. Please ensure your microSD cards are formatted using the [FAT32](https://en.wikipedia.org/wiki/FAT32) format. Because of the FAT32 limitation, individual file sizes are limited to 4Gbytes.
+
+I am not aware of any practical upper limit to the size of supported microSD cards. [FAT32](https://en.wikipedia.org/wiki/FAT32) does impose limits, but there are no microSD cards that are large enough to reach these limits.
+
+Name-brand microSD cards are highly recommended. There are some terrible microSD cards being sold as no-name brands, or as counterfeit name brands, and aren't worth the frustration to save a little money. Bad cards will work erratically, or perform slowly, and wear out quickly -- if they work at all.
 
 Because the PortaPack has no control over power, and can therefore not perform a gentle shutdown, please ensure you have exited any PortaPack application that actively writes to the microSD card before you remove power. Otherwise, you may wind up with a damaged file or card formatting / partition. The main menu is a safe time to unplug the power.
 
