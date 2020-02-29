@@ -23,7 +23,7 @@ The [microSD card](https://en.wikipedia.org/wiki/MicroSD#Micro-cards) socket is 
 
 Current firmware does not support [exFAT](https://en.wikipedia.org/wiki/ExFAT), as it is encumbered by Microsoft patents. Please ensure your microSD cards are formatted using the [FAT32](https://en.wikipedia.org/wiki/FAT32) format. Because of the FAT32 limitation, individual file sizes are limited to 4Gbytes.
 
-I am not aware of any practical upper limit to the size of supported microSD cards. [FAT32](https://en.wikipedia.org/wiki/FAT32) does impose limits, but there are no microSD cards that are large enough to reach these limits.
+I am not aware of any practical upper limit to the size of supported microSD cards. [FAT32](https://en.wikipedia.org/wiki/FAT32) does impose limits, but there are no microSD cards that are large enough to reach these limits. Apparently, the Windows operating system will not create FAT32 filesystems larger than 32GB, which is... odd.
 
 Name-brand microSD cards are highly recommended. There are some terrible microSD cards being sold as no-name brands, or as counterfeit name brands, and aren't worth the frustration to save a little money. Bad cards will work erratically, or perform slowly, and wear out quickly -- if they work at all.
 
